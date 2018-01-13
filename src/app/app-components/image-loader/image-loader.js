@@ -27,7 +27,7 @@ class ImageLoader extends React.Component {
 		return (
 			<div>
 				{imageToBeShown}
-	            <img className="img-thumbnail" onLoad={this._revealImage.bind(this)} src={this.props.image} alt='food'/>
+	            <img className={'img-thumbnail '+ (this.state.imageLoading ? 'opaque': '')} onError={this._revealImage.bind(this)} onLoad={this._revealImage.bind(this)} src={this.props.image} alt='food'/>
 	        </div>
 		);
 	}

@@ -68,7 +68,11 @@ APP CSS
     margin: 20px 0 24px 00px;
     box-shadow: 0 0px 5px 2px rgba(0,0,0,.25);
 }
-
+.opaque{
+  width: 1px;
+  height: 1px;
+  opacity: 0.1;
+}
 .product-description{
   border-bottom: 1px solid grey;
   font-family: Lato;
